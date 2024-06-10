@@ -1,200 +1,189 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
-  --header: pink;
-  --section-one: rgba(155, 164, 164, 0.1);
-  --bg-color: #ffc0cb50;
-  --box-shadow: #9e4949;
-  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    --section-one: rgba(155, 164, 164, 0.1);
+    --bg-color: #FFC0CB50;
+    --border: .1rem solid rgba(255, 255, 255, .3);
 }
 
 * {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration-line: none;
-  text-transform: capitalize;
-  transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+    text-transform: capitalize;  
+    transition: .1s linear;
 }
 
 body {
-  line-height: 1.6;
-  color: #333;
+    line-height: 1.6;
+    color: #333;
 }
 
 #wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* header */
 
-header.header {
-  background: var(--header);
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem 7%;
-  box-shadow: 0 0 10px #9e4949;
-  margin-bottom: 20px;
+header.header { 
+    background: pink;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 7%;
+    box-shadow: 0 0 7px crimson;
+    margin-bottom: 30px;
+    position: fixed; /* Đảm bảo thanh header cố định ở vị trí ban đầu */
+    width: 100%; /* Cố định thanh header chiếm toàn bộ chiều rộng */
+    top: 0; /* Đặt thanh header ở phía trên cùng */
+    z-index: 1000; /* Đảm bảo thanh header luôn hiển thị trên top */
 }
 
 header.header .logo img {
-  height: 90px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
 }
 
-header.header .icons {
-  position: absolute;
-  right: 50px;
+header.header .cart {
+    position: absolute;
+    right: 50px;
+    margin-right: 2rem;
 }
 
-header.header .icons div {
-  color: #000;
-  cursor: pointer;
-  font-size: 1.5rem;
-  margin-left: 1.5rem;
+header.header .cart .cart-btn {
+    color: crimson;
+    cursor: pointer;
+    font-size: 2.5rem;
+} 
+
+header.header .cart .cart-btn:hover {
+    color: #111;
 }
 
-header.header .icons div:hover {
-  color: #fff;
+header.header .cart span {
+    position: absolute;
+    padding: 6px 8px;
+    background-color: #fff;        
+    color: #000;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: .8rem;
+    margin-left: -.1rem;
+    margin-top: .4rem;
 }
 
 header.header .logo img:hover {
-  opacity: 0.8;
-}
-.header .cart .cart1 {
-  float: right;
-}
-.cart {
-  padding-right: 8px;
-  margin-top: 30px;
-  font-size: 40px;
-}
-.cart1 {
-  text-decoration: none;
-}
-.cart1 .ti {
-  color: crimson;
-}
+    opacity: 0.8;
+} 
 
-/*giỏ hàng*/
-
-.cart2 {
-  position: absolute;
-  padding: 3px 8px;
-  background-color: #fff;
-  color: #000;
-  font-size: 16px;
-  border-radius: 10px;
-  font-size: 1rem;
-  line-height: 1.2rem;
-}
 
 /* container */
 
 main {
-  flex: 1;
-  padding: 30px;
+    flex: 1;
+    padding: 30px;
+    background-color: var(--bg-color);
+    margin: 130px 30px 30px 30px;
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.title_cattintuc {
-  padding-left: 15px;
-  border-bottom: 1px solid #9e4949;
-  height: 40px;
-  display: flex;
-  align-items: center;
+.title_cattintuc  {
+    padding-left: 15px;
+    border-bottom: 1px solid crimson;
+    height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .title_cattintuc h2 {
-  font-family: FS;
-  font-size: 14px;
-  color: #d53737;
-  text-transform: uppercase;
-  text-decoration: none;
+    font-family: FS;
+    font-size: 14px;
+    color: crimson;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .title_cattintuc h2 img {
-  margin-right: 1px;
+    margin-right: 1px;
 }
 
 .title_cattintuc h2 a {
-  text-decoration: none;
-  text-transform: uppercase;
-  padding-left: 15px;
-  font-family: "Roboto", sans-serif; /* Chọn font chữ */
-  font-size: 17px; /* Cỡ chữ */
-  font-weight: bold; /* Độ đậm của chữ */
-  color: #d53737;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif; /* Chọn font chữ */
+    font-size: 17px; /* Cỡ chữ */
+    font-weight: bold; /* Độ đậm của chữ */
+    color: crimson;
 }
 
 .title_cattintuc h2 a:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 /* product */
 
 #content {
-  margin-top: 20px;
-  width: 100%;
-  height: 500px;
-
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
+ 
 #content img {
-  width: 450px;
-  height: 320px;
-  align-items: center;
-  margin: 75px 70px;
-  border-radius: 50px;
+    width: 450px;
+    height: 320px;
+    align-items: center;
+    margin: 75px 70px;
+    border-radius: 50px;
 }
 
 #content ul {
-  flex: 1;
+    flex: 1;
+    margin: 0 10px;
 }
 
 #content ul li {
-  text-transform: none;
-  text-decoration: none;
-  list-style: none;
-  margin-top: 30px;
-  margin-left: 150px;
+    text-transform: none; 
+    text-decoration: none;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 100px;
 }
 
 #content ul li span {
-  text-transform: none;
-  color: #18100d;
-  font-family: FS;
-  font-size: 24px;
-  font-weight: bold;
+    text-transform: none;
+    color: #18100d;
+    font-family: FS;
+    font-size: 24px;
+    font-weight: bold;
 }
-
+  
 #content ul li p {
-  text-transform: none;
-  margin-top: 0;
-  margin-bottom: 1rem;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 /* Nút */
 
 .order-button {
-  background-color: #b42727; /* Màu nền của nút */
+  background-color: crimson; /* Màu nền của nút */
   border: none; /* Loại bỏ đường viền */
   height: 40px;
   width: 100px;
@@ -205,25 +194,283 @@ main {
   display: inline-block; /* Hiển thị như block inline */
   font-size: 16px; /* Cỡ chữ */
   cursor: pointer; /* Hiển thị icon con trỏ khi di chuột qua nút */
-  border-radius: 8px; /* Bo tròn góc của nút */
+  border-radius: 7px; /* Bo tròn góc của nút */
 }
 
 .order-button:hover {
-  opacity: 0.8;
+  opacity: 0.8; 
 }
 
 /* footer */
 
 footer {
-  margin-top: 20px;
-  background-color: var(--header);
-  color: var(--box-shadow);
-  text-align: center;
-  padding: 50px 0;
+    background: pink ;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;;
 }
-
-footer p {
-  margin: 50px 0px;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.footer-section {
+    width: 30%;
+    margin-left:30px;
+    color:crimson;
+}
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.footer-section p {
+    margin: 5px 0;
+}
+.footer-section a {
+    color: crimson;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+.footer-section a:hover {
+    text-decoration: underline;
 }
 
 /* responsive */
+
+@media (max-width: 1024px) {
+    header.header {
+        flex-direction: row;
+        height: auto;
+        padding: 1rem;
+        justify-content: center; 
+    }
+
+    header.header .logo img {
+        height: 70px;
+    }
+        
+    header.header .cart {
+        right: 10px;
+    }
+        
+    header.header .cart .cart-btn {
+        font-size: 2rem;
+    }
+        
+     main {
+        padding: 20px;
+        margin: 120px 20px 20px 20px; /* Thêm khoảng trắng giữa thanh header và phần main */
+    }
+        
+    .title_cattintuc h2 a {
+        font-size: 16px;
+    }
+        
+    #content {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+        
+    #content img {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+        
+    #content ul {
+        margin: 0;
+    }
+        
+    #content ul li {
+        margin-left: 0;
+        text-align: center; 
+   } 
+
+   #content ul li p {
+    text-align: left;
+   }
+
+    footer {
+        padding: 20px;  
+    }
+
+    .footer-container {
+        flex-direction: row; /* Đảm bảo các phần của footer hiển thị theo hàng ngang */
+        justify-content: space-between; /* Tạo khoảng cách đều giữa các phần */
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .footer-section {
+        width: 30%; /* Đảm bảo mỗi phần chiếm 30% chiều rộng */
+        margin-left: 0;
+        text-align: center; /* Canh giữa văn bản */
+        color: crimson;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .footer-section p {
+        margin: 5px 0;
+    }
+
+    .footer-section a {
+        color: crimson;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+@media (max-width: 834px) {
+    header.header {
+        padding: 1rem;
+    }
+
+    header.header .cart {
+        right: 5px;
+    }
+
+    main {
+        margin: 120px 10px 10px 10px;
+        padding: 20px;
+    }
+
+    #content ul li p {
+        text-align: left;
+    }
+
+    footer {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .footer-section {
+        width: 30%;
+        margin-left: 30px;
+        color: crimson;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .footer-section p {
+        margin: 5px 0;
+    }
+
+    .footer-section a {
+        color: crimson;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    header.header {
+        flex-direction: row;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    header.header .logo img {
+        height: 70px;
+        margin-bottom: 0;
+    }
+
+    header.header .cart {
+        right: 10px;
+    }
+
+    main {
+        margin: 120px 10px 10px 10px; /* Thêm khoảng trắng ở trên cho màn hình nhỏ */
+        padding: 20px;
+    }
+
+    #content {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #content img {
+        width: 95%;
+        height: auto;
+        margin: 0 0 20px 0;
+        border-radius: 20px;
+    }
+
+    #content ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #content ul li {
+        margin: 20px 0;
+        padding: 0 10px;
+    }
+
+    #content ul li p {
+        text-align: left;
+    }
+
+    .title_cattintuc {
+        padding-left: 5px;
+        height: auto;
+    }
+
+    .title_cattintuc h2 a {
+        font-size: 14px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
