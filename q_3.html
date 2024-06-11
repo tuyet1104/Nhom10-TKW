@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Strawberry | Strawberry Bakery </title>
+    <link rel="icon" href="image_big/logo(ico).ico">
+    <link rel="stylesheet" href="sp.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css" />
+    <script src="sp.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+        <header class="header">
+          <a href="#" class="logo">
+            <img src="image_big/logosize.png" alt="STRAWBERRY"/>  
+          </a>
+
+          <div class="cart" onclick="toggleNav()">
+            <a class="cart1"  >
+                <i class="ti ti-shopping-cart"></i>
+                <span class="cart2">3</span>
+            </a>
+          </div>
+          <div id="myShoppingCart" class="ShoppingCart">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             <a>
+                 <div class="item">
+                     <img src="image_big/Bánh kem/Cake mini 02.jpg" alt="Bánh kem">
+                     <div class="content">
+                         <div class="name">
+                             Bánh kem mini kẹo Socola
+                         </div>
+                         <div class="price">
+                             30.000 VND
+                         </div>
+                     </div>
+                     <div class="quantity">
+                             <button>-</button>
+                             <span class="value">2</span>
+                             <button>+</button>
+                     </div>
+                     
+                 </div>
+             </a>
+             <a>
+                 <div class="item">
+                     <img src="image_big/Bánh kem/Cake mini 08.jpg" alt="Bánh kem">
+                     <div class="content">
+                         <div class="name">
+                             Bánh kem mini Socola tan chảy
+                         </div>
+                         <div class="price">
+                             120.000 VND
+                         </div>
+                     </div>
+                     <div class="quantity">
+                         <button>-</button>
+                         <span class="value">2</span>
+                         <button>+</button>
+                     </div>
+                     
+                 </div>
+             </a>
+             <a>
+                 <div class="item">
+                     <img src="image_big/Bánh kem/Hoa quả 03.jpg" alt="Bánh kem">
+                     <div class="content">
+                         <div class="name">
+                             Bánh kem hoa quả hỗn hợp
+                         </div>
+                         <div class="price">
+                             500.000 VND
+                         </div>
+                     </div>
+                     <div class="quantity">
+                         <button>-</button>
+                         <span class="value">2</span>
+                         <button>+</button>
+                     </div>
+                     
+                 </div>
+             </a>
+             <a>
+                 <div class="checkout">
+                     <a href="checkout.html">Đặt đơn</a>
+                 
+                 </div>
+             </a>
+         </div> 
+         
+        </header>
+
+        <main>
+          <section>
+            <div class="container">
+              <div class="title_cattintuc w-100">
+                <h2>
+                  <img src="image_big/muiten.png" alt="STRAWBERRY"/>
+                  <a href="">Tất cả sản phẩm</a>
+                </h2>
+              </div>
+            </div>
+          </section>
+
+          <section class="product">
+            <div id="content">
+              <img src="image_big/Cookies/ck 03.jpg" alt="Bánh quy">
+              <ul>
+                  <li><span>Bánh quy Socola</span></li>
+                  <li><h3>20.000 VND/10 bánh</h3></li>
+                  <li><p>Mô tả: Bánh quy socola là những chiếc bánh quy nhỏ với hình dáng dễ thương và có màu nâu đặc trưng của Socola, chúng thường là điểm nhấn ngon miệng trong các bữa tiệc, hoặc là món quà vặt lý tưởng cho mọi lứa tuổi.</p></li>
+                  <li><p>Thành phần: Bánh quy socola mặt cười được làm từ bột mì, đường, bơ, bột cacao, lòng đỏ trứng, hạt vani và thành phần không thể thiếu là Socola, ...</p></li>
+                  <li><button class="order-button" onclick="addToCart({ name: 'Bánh quy Socola', price: 20.000, image: 'image_big/Cookies/ck 03.jpg' })">Đặt hàng</button></li>
+              </ul>
+            </div>
+          </section>
+
+        </main>
+
+        <footer>
+          
+          <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>Strawberry</h3>
+                <p>Giới thiệu</p>
+                <p>Các loại bánh</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: thanha2k18@gmail.com</p>
+                <p>Phone: 0399703616</p>
+                <p>12 P.Chùa Bộc Q.Đống Đa TP.Hà Nội</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#"><i class="ti-facebook"></i> Facebook</a>
+                    <a href="#"><i class="ti-twitter"></i> Twitter</a>
+                    <a href="#"><i class="ti-instagram"></i> Instagram</a>
+                </p>
+            </div>
+
+          </div>
+
+        </footer>  
+
+    </div>
+
+  </body>
+  
+</html>
