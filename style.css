@@ -21,7 +21,7 @@ a{
     padding: 20px;
 }
 .checkoutLayout .right{
-    background-color: #f3d6f1;
+    background-color: pink;
     border-radius: 20px;
     padding: 40px;
     color: #3a3a3a;
@@ -66,7 +66,7 @@ a{
     height: 40px;
     border: none;
     border-radius: 20px;
-    background-color: #b04a9a;
+    background-color: rgb(197, 136, 147);
     margin-top: 20px;
     font-weight: bold;
     color: #fff;
@@ -179,7 +179,7 @@ a{
         
     }
 }
-@media only screen and (min-width: 855px) and (max-width: 1200px) {
+@media only screen and (min-width: 855px) and (max-width: 950px) {
     .container{
      max-width: 100%;
     }
@@ -193,7 +193,7 @@ a{
    }
    .returnCart .list .item{
      display: grid;
-     grid-template-columns: 55px 120px 55px 70px;
+     grid-template-columns: 50px 90px 55px 70px;
     
  
     }
@@ -208,6 +208,23 @@ a{
      .checkoutLayout .right{        
         padding: 30px;
          
+    }
+}
+@media only screen and (min-width: 951px) and (max-width: 1200px){
+    .returnCart .list .item img{
+        max-width: 88%;
+        max-height: 88%;
+    }
+    .returnCart .list .item{
+        display: grid;
+        grid-template-columns: 55px 110px 60px 50px;
+       
+    }
+    .container{
+        margin-left: -10px;
+    }
+    .checkoutLayout .right{
+        margin-right: -110px;
     }
 }
 @media only screen and (min-width: 1201px){
