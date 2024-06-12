@@ -10,7 +10,7 @@ html {
 }
 .logo img {
   width: auto;
-  height: 100px;
+  height: 95px;
   border-radius: 50%; /*bo góc*/
   border-color: #fff;
   display: flex; /* Sử dụng Flexbox để quản lý vị trí */
@@ -195,6 +195,9 @@ html {
 }
 .cart1 .ti {
   color: crimson;
+}
+.cart1 .ti:hover {
+  color: #fff;
 }
 
 /*giỏ hàng*/
@@ -552,11 +555,11 @@ footer {
   color: #333;
   font-size: large;
 }
-.ShoppingCart a {
+.ShoppingCart .closebtn .item {
   padding: 20px;
   overflow: auto;
 }
-.ShoppingCart a ::-webkit-scrollbar {
+.ShoppingCart .closebtn .item ::-webkit-scrollbar {
   width: 0;
 }
 .ShoppingCart a {
@@ -665,6 +668,14 @@ footer {
     font-size: 14px;
   }
 }
+@media only screen and (max-height: 485px) {
+  .item {
+    margin-bottom: 0;
+  }
+  .checkout {
+    margin-bottom: -190px;
+  }
+}
 
 /*Responsive */
 @media (max-width: 1536px) {
@@ -751,6 +762,16 @@ footer {
       margin-left: 25px;
       cursor: pointer;
       font-size: 22px;
+    }
+    #nav__ipad {
+      max-height: 100%;
+      overflow: auto;
+      z-index: 3000;
+    }
+    .nav__overlay {
+      max-height: 100%;
+      overflow: auto;
+      z-index: 3000;
     }
     #head {
       /* display: inline-flex; */
