@@ -767,11 +767,9 @@ footer {
     z-index: 3000;
   }
   #head {
-    /* display: inline-flex; */
     height: 90px;
     position: fixed;
     z-index: 2000;
-    position: absolute;
     justify-content: none;
   }
   #head .cart {
@@ -878,7 +876,7 @@ footer {
     flex-basis: 50%; /* mỗi sp chiếm 50% trên 1 hàng */
   }
   #head .cart {
-    left: 15%;
+    left: 10%;
   }
   #head .user {
     margin-right: 5px;

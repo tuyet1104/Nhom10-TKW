@@ -36,7 +36,7 @@ header.header {
   align-items: center;
   justify-content: center;
   padding: 1.5rem 7%;
-  box-shadow: 0 0 7px crimson;
+  /* box-shadow: 0 0 7px crimson; */
   margin-bottom: 30px;
   position: fixed; /* Đảm bảo thanh header cố định ở vị trí ban đầu */
   width: 100%; /* Cố định thanh header chiếm toàn bộ chiều rộng */
@@ -45,7 +45,7 @@ header.header {
 }
 
 header.header .logo img {
-  height: 90px;
+  height: 95px;
   border-radius: 50%;
   display: flex;
   align-items: center;

@@ -774,11 +774,10 @@ footer {
       z-index: 3000;
     }
     #head {
-      /* display: inline-flex; */
+      display: flex;
       height: 90px;
       position: fixed;
       z-index: 2000;
-      position: absolute;
       justify-content: none;
     }
     #head .cart {
