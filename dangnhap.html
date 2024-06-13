@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Strawberry Bakery | Đăng ký </title>
+    <title> Strawberry Bakery | Đăng nhập </title>
     <link rel="icon" href="image_big/logo(ico).ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -12,7 +12,7 @@
       /*modal*/
       .modal-body {
         margin: auto;
-        position: relative; /* cho phép địn vị modal trên các phần tử khác */
+        position: relative; /* cho phép định vị modal trên các phần tử khác */
         z-index: 1;
         border-radius: 5px;
         background-color: #e812120e;
@@ -49,6 +49,7 @@
         color: crimson;
         font-weight: 500;
         cursor: pointer;
+        text-decoration: none;
       }
 
       .authen-form {
@@ -77,6 +78,7 @@
         font-size: 1.2rem;
         font-family: "Times New Roman", Times, serif;
         text-align: center;
+        text-decoration:none;
       }
 
       /*button style*/
@@ -102,7 +104,6 @@
       .btn:hover {
         background-color: #cccccc51;
       }
-
       .btn-primary {
         min-width: 142px;
         height: 36px;
@@ -221,7 +222,7 @@
         <div class="authen-form-container">
           <div class="authen-header">
             <h3 class="header1">Đăng nhập</h3>
-            <a href="dangki.html"><span class="authen-switch">Đăng kí</span></a>
+            <a href="dangki.html" class="authen-switch"> <span class="authen-switch">Đăng kí</span></a>
           </div>
           <div class="authen-form">
             <div class="authen-form-group">
@@ -247,7 +248,7 @@
             </div>
           </div>
           <div class="authen-form-aside">
-            <a href="quenmk.html">
+            <a href="quenmk.html" class="authen-form-policy">
               <p class="authen-form-policy">Quên mật khẩu?</p></a
             >
           </div>
