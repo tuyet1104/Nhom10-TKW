@@ -367,10 +367,12 @@ ul.products li .product-top {
 ul.products li .product-top .product-thumb {
   /* 3 */
   display: block;
+  transition: 0.5s;
 }
 
 ul.products li:hover .product-top .product-thumb img {
   filter: opacity(70%); /* mềm mại ảnh khi hover */
+  transform: scale(1.2);
 }
 
 ul.products li .product-top .product-thumb img {
