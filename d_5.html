@@ -3,158 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Strawberry Bakery | Bánh donuts </title>
-    <link rel="icon" href="image_big/logo(ico).ico">
+    <title>Strawberry Bakery | Bánh donuts</title>
+    <link rel="icon" href="image_big/logo(ico).ico" />
     <link rel="stylesheet" href="sp.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css" />
     <script src="sp.js" defer></script>
-    
   </head>
 
   <body>
-
     <div id="wrapper">
+      <header class="header">
+        <a href="index.html" class="logo">
+          <img src="image_big/logosize.png" alt="STRAWBERRY" />
+        </a>
 
-        <header class="header">
-          <a href="index.html" class="logo">
-            <img src="image_big/logosize.png" alt="STRAWBERRY"/>  
+        <div class="cart" onclick="toggleNav()">
+          <a class="cart1">
+            <i class="ti ti-shopping-cart"></i>
+            <span class="cart2">3</span>
           </a>
-
-          <div class="cart" onclick="toggleNav()">
-            <a class="cart1"  >
-                <i class="ti ti-shopping-cart"></i>
-                <span class="cart2">3</span>
-            </a>
-          </div>
-          <div id="myShoppingCart" class="ShoppingCart">
-             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-             <a>
-                 <div class="item">
-                     <img src="image_big/Bánh kem/Cake mini 02.jpg" alt="Bánh kem">
-                     <div class="content">
-                         <div class="name">
-                             Bánh kem mini kẹo Socola
-                         </div>
-                         <div class="price">
-                             30.000 VND
-                         </div>
-                     </div>
-                     <div class="quantity">
-                             <button>-</button>
-                             <span class="value">2</span>
-                             <button>+</button>
-                     </div>
-                     
-                 </div>
-             </a>
-             <a>
-                 <div class="item">
-                     <img src="image_big/Bánh kem/Cake mini 08.jpg" alt="Bánh kem">
-                     <div class="content">
-                         <div class="name">
-                             Bánh kem mini Socola tan chảy
-                         </div>
-                         <div class="price">
-                             120.000 VND
-                         </div>
-                     </div>
-                     <div class="quantity">
-                         <button>-</button>
-                         <span class="value">2</span>
-                         <button>+</button>
-                     </div>
-                     
-                 </div>
-             </a>
-             <a>
-                 <div class="item">
-                     <img src="image_big/Bánh kem/Hoa quả 03.jpg" alt="Bánh kem">
-                     <div class="content">
-                         <div class="name">
-                             Bánh kem hoa quả hỗn hợp
-                         </div>
-                         <div class="price">
-                             500.000 VND
-                         </div>
-                     </div>
-                     <div class="quantity">
-                         <button>-</button>
-                         <span class="value">2</span>
-                         <button>+</button>
-                     </div>
-                     
-                 </div>
-             </a>
-             <a>
-                 <div class="checkout">
-                     <a href="checkout.html">Đặt đơn</a>
-                 
-                 </div>
-             </a>
-         </div> 
-         
-        </header>
-
-        <main>
-          <section>
-            <div class="container">
-              <div class="title_cattintuc w-100">
-                <h2>
-                  <img src="image_big/muiten.png" alt="STRAWBERRY"/>
-                  <a href="donuts.html">Tất cả sản phẩm</a>
-                </h2>
+        </div>
+        <div id="myShoppingCart" class="ShoppingCart">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a>
+            <div class="item">
+              <img src="image_big/Banhkem/Cake mini 02.jpg" alt="Bánh kem" />
+              <div class="content">
+                <div class="name">Bánh kem mini kẹo Socola</div>
+                <div class="price">30.000 VND</div>
+              </div>
+              <div class="quantity">
+                <button>-</button>
+                <span class="value">2</span>
+                <button>+</button>
               </div>
             </div>
-          </section>
-
-          <section class="product">
-            <div id="content">
-              <img src="image_big/donuts/Combo donuts 04.jpg" alt="Bánh donuts">
-              <ul>
-                  <li><span>Combo 3 bánh donuts 01</span></li>
-                  <li><h3>55.000 VND</h3></li>
-                  <li><p>Mô tả: Đây là một tùy chọn thú vị gồm ba chiếc bánh donuts với ba loại hương vị khác nhau. Combo bao gồm bánh donuts vị socola, vị dâu và vị hạnh nhân, mỗi loại mang một hương vị độc đáo và hấp dẫn. Đây là một lựa chọn tuyệt vời để thưởng thức nhiều hương vị trong một lần, mang lại trải nghiệm đa dạng và thú vị cho người dùng.</p></li>
-                  <li><p>Thành phần: Bột mì, cacao, đường, trứng, sữa, bơ, baking powder, vanilla, muối, sô cô la, dâu, ...</p></li>
-                  <li><button class="order-button" onclick="addToCart({ name: 'Combo 3 bánh donuts 01', price: 55.000, image: 'image_big/donuts/Combo donuts 04.jpg' })">Đặt hàng</button></li>
-              </ul>
+          </a>
+          <a>
+            <div class="item">
+              <img src="image_big/Banhkem/Cake mini 08.jpg" alt="Bánh kem" />
+              <div class="content">
+                <div class="name">Bánh kem mini Socola tan chảy</div>
+                <div class="price">120.000 VND</div>
+              </div>
+              <div class="quantity">
+                <button>-</button>
+                <span class="value">2</span>
+                <button>+</button>
+              </div>
             </div>
-          </section>
-
-        </main>
-
-        <footer>
-          
-          <div class="footer-container">
-
-            <div class="footer-section">
-                <h3>Strawberry</h3>
-                <p>Giới thiệu</p>
-                <p>Các loại bánh</p>
+          </a>
+          <a>
+            <div class="item">
+              <img src="image_big/Banhkem/hoaqua03.jpg" alt="Bánh kem" />
+              <div class="content">
+                <div class="name">Bánh kem hoa quả hỗn hợp</div>
+                <div class="price">500.000 VND</div>
+              </div>
+              <div class="quantity">
+                <button>-</button>
+                <span class="value">2</span>
+                <button>+</button>
+              </div>
             </div>
-
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: thanha2k18@gmail.com</p>
-                <p>Phone: 0399703616</p>
-                <p>12 P.Chùa Bộc Q.Đống Đa TP.Hà Nội</p>
+          </a>
+          <a>
+            <div class="checkout">
+              <a href="checkout.html">Đặt đơn</a>
             </div>
+          </a>
+        </div>
+      </header>
 
-            <div class="footer-section">
-                <h3>Follow Us</h3>
+      <main>
+        <section>
+          <div class="container">
+            <div class="title_cattintuc w-100">
+              <h2>
+                <img src="image_big/muiten.png" alt="STRAWBERRY" />
+                <a href="donuts.html">Tất cả sản phẩm</a>
+              </h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="product">
+          <div id="content">
+            <img src="image_big/donuts/Combo donuts 04.jpg" alt="Bánh donuts" />
+            <ul>
+              <li><span>Combo 3 bánh donuts 01</span></li>
+              <li><h3>55.000 VND</h3></li>
+              <li>
                 <p>
-                  <a href="https://www.facebook.com/duythai.nguyen.77985741/"><i class="ti-facebook"></i> Facebook</a>
-                  <a href="#"><i class="ti-twitter"></i> Twitter</a>
-                  <a href="https://www.instagram.com/n.tuyet_124/"><i class="ti-instagram"></i> Instagram</a>
+                  Mô tả: Đây là một tùy chọn thú vị gồm ba chiếc bánh donuts với
+                  ba loại hương vị khác nhau. Combo bao gồm bánh donuts vị
+                  socola, vị dâu và vị hạnh nhân, mỗi loại mang một hương vị độc
+                  đáo và hấp dẫn. Đây là một lựa chọn tuyệt vời để thưởng thức
+                  nhiều hương vị trong một lần, mang lại trải nghiệm đa dạng và
+                  thú vị cho người dùng.
                 </p>
-            </div>
+              </li>
+              <li>
+                <p>
+                  Thành phần: Bột mì, cacao, đường, trứng, sữa, bơ, baking
+                  powder, vanilla, muối, sô cô la, dâu, ...
+                </p>
+              </li>
+              <li>
+                <button
+                  class="order-button"
+                  onclick="addToCart({ name: 'Combo 3 bánh donuts 01', price: 55.000, image: 'image_big/donuts/Combo donuts 04.jpg' })"
+                >
+                  Đặt hàng
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
 
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Strawberry</h3>
+            <p>Giới thiệu</p>
+            <p>Các loại bánh</p>
           </div>
 
-        </footer>    
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: thanha2k18@gmail.com</p>
+            <p>Phone: 0399703616</p>
+            <p>12 P.Chùa Bộc Q.Đống Đa TP.Hà Nội</p>
+          </div>
 
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>
+              <a href="https://www.facebook.com/duythai.nguyen.77985741/"
+                ><i class="ti-facebook"></i> Facebook</a
+              >
+              <a href="#"><i class="ti-twitter"></i> Twitter</a>
+              <a href="https://www.instagram.com/n.tuyet_124/"
+                ><i class="ti-instagram"></i> Instagram</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
-
   </body>
-  
 </html>
